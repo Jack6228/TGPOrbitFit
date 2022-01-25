@@ -29,5 +29,5 @@ with body:
     fig = frame.plot(earth_orbit, label='Earth')
     fig = frame.plot(Orbit.from_classical(Sun, 1.52366231* u.AU, 0.09341233* u.one, 1.85061* u.deg, 49.57854* u.deg, 336.04084* u.deg, 355.45332* u.deg, epoch), label='Mars')
     fig = frame.plot(orbcalc, label='2282AB')
-    fig.update_layout(autosize=False,width=1500,height=1000)
+    fig.update_layout(autosize=False,width=1200,height=1000)
     st.plotly_chart(fig)
