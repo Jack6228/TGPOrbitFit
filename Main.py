@@ -20,7 +20,7 @@ with body:
 
     epoch = Time(datetime.datetime.strptime("2021-10-10 09:16:08.893164", "%Y-%m-%d %H:%M:%S.%f"))
     st.write("Epoch of",epoch)
-    st.write("Some other text can go here")
+#     st.write("Some other text can go here")
     g = [2.17818205, 0.05632504, 5.05305396, 207.31155227, 247.68463676, 86.58450509]
     orbcalc = Orbit.from_classical(Sun, g[0]* u.AU, g[1]* u.one, g[2]* u.deg, g[3]* u.deg, g[4]* u.deg, g[5]* u.deg, epoch)
     frame = OrbitPlotter3D()
